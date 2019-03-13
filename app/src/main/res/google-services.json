@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "635143696627",
+    "firebase_url": "https://fir-demo-60021.firebaseio.com",
+    "project_id": "fir-demo-60021",
+    "storage_bucket": "fir-demo-60021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635143696627:android:0f9c000b46e4f4a4",
+        "android_client_info": {
+          "package_name": "com.example.lokeshkumar.splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635143696627-ds0ovblogk8s5ugi6iqp9lf6seoeus19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfkofd5IdN0L89aCuqQ38vgy8mCvNRGyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

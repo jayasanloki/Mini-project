@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lokeshkumar.splash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:label="POLO"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_menu_send" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".MusicActivity"
+            android:label="POLO"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SecondActivity">
+
+        </activity>
+        <activity android:name=".Register"
+            android:parentActivityName=".ChatLogin"
+            android:label="POLO"/>
+        <activity android:name=".Users"
+            android:parentActivityName=".ChatChoose"
+            android:label="POLO">
+
+        </activity>
+        <activity android:name=".ChatLogin"
+            android:parentActivityName=".SecondActivity"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".ForgetActivity"
+            android:parentActivityName=".LoginActivity"
+            >
+
+        </activity>
+        <activity
+            android:name=".ForgetVerifyActivity"
+            android:parentActivityName=".ForgetActivity"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".SignupActivity">
+
+        </activity>
+        <activity android:name=".SignupActivity"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".OfflineNotes"
+            android:parentActivityName=".SecondActivity"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".DrawingGesture"
+            android:parentActivityName=".SecondActivity"
+            android:label="POLO">
+
+        </activity>
+        <activity android:name=".ChatActivity"
+            android:parentActivityName=".Users"
+            android:label="POLO">
+
+        </activity>
+
+        <activity
+            android:name=".UploadImage"
+            android:parentActivityName=".UploadFragment"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".VideoActivity"
+            android:parentActivityName=".SecondActivity"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".UploadWord"
+            android:parentActivityName=".UploadFragment"
+            android:label="POLO">
+
+        </activity>
+        <activity android:name=".UploadFragment"
+            android:parentActivityName=".SecondActivity"
+            android:label="POLO">
+
+        </activity>
+        <activity android:name=".DownloadActivity"
+            android:parentActivityName=".SecondActivity"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".UploadVideo"
+            android:parentActivityName=".UploadFragment"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".UploadAudio"
+            android:parentActivityName=".UploadFragment"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".UploadPdf"
+            android:parentActivityName=".UploadFragment"
+            android:label="POLO">
+
+        </activity>
+        <activity
+            android:name=".UploadTextDoc"
+            android:parentActivityName=".UploadFragment"
+            android:label="POLO">
+
+        </activity>
+<activity android:name=".ChatChoose"
+    android:parentActivityName=".SecondActivity"
+    android:label="POLO">
+
+</activity>
+        <activity android:name=".PublicChat"
+            android:parentActivityName=".ChatChoose"
+            android:label="POLO">
+
+        </activity>
+        <service android:name="com.example.lokeshkumar.splash.MusicService" />
+    </application>
+
+</manifest>

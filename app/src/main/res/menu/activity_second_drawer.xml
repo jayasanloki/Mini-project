@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/chat"
+            android:title="CHAT" />
+        <item
+            android:id="@+id/upload"
+            android:title="UPLOAD" />
+        <item
+            android:id="@+id/download"
+            android:title="DOWNLOAD" />
+        <item
+            android:id="@+id/action_settings"
+            android:title="SETTINGS" />
+        <item
+            android:id="@+id/offline"
+            android:title="TAKE OFFLINE NOTES"/>
+        <item
+            android:id="@+id/audio"
+            android:title="AUDIO PLAYER"/>
+        <item
+            android:id="@+id/videoplay"
+            android:title="VIDEO PLAYER"/>
+
+<item
+    android:title="DRAW NOTES"
+    android:id="@+id/drawges"/>
+    </group>
+
+
+</menu>
