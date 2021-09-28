@@ -1,36 +1,30 @@
 package com.example.lokeshkumar.splash;
 
-import android.app.Activity;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.os.Bundle;
-
-
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import java.io.*;
-import java.net.*;
-
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
 import java.io.File;
 import java.util.ArrayList;
 
 
 
-public class DownloadActivity extends Activity implements View.OnClickListener{
+public class DownloadActivity extends AppCompatActivity implements View.OnClickListener{
     EditText act;
     TextView textView;
     File file;

@@ -1,5 +1,14 @@
 package com.example.lokeshkumar.splash;
 
+import android.os.Bundle;
+import android.os.Environment;
+import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -11,18 +20,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.app.Activity;
-import android.os.Environment;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
-
-public class OfflineNotes extends Activity {
+public class OfflineNotes extends AppCompatActivity {
     EditText inputText;
     TextView response;
     Button saveButton,readButton;

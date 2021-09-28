@@ -1,22 +1,22 @@
 package com.example.lokeshkumar.splash;
 
-import android.app.Activity;
-import android.content.pm.PackageManager;
-import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import java.util.UUID;
-import android.provider.MediaStore;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class DrawingGesture extends Activity implements OnClickListener{
+import java.util.UUID;
+
+public class DrawingGesture extends AppCompatActivity implements OnClickListener{
     private DrawingView drawView;
     private ImageButton currPaint, drawBtn, eraseBtn, newBtn, saveBtn;
     private float smallBrush, mediumBrush, largeBrush;
